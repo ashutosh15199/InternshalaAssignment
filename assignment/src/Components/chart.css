@@ -1,0 +1,85 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  margin: 0;
+}
+
+.container {
+  display: flex;
+  flex-direction: column; /* Adjusted to column for smaller screens */
+  align-items: center;
+  max-width: 100%;
+  width: 100%;
+  margin: auto;
+  padding: 20px; /* Added padding for better spacing */
+  border: 3px solid black;
+  border-radius: 20px;
+  background-color: #fff;
+}
+
+h4, h2 {
+  color: blue;
+  margin-left: 15px;
+}
+
+.header {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  border: 3px solid black;
+  border-radius: 20px;
+}
+
+.subheader {
+  width: 100%;
+  display: flex;
+  flex-direction: column; /* Adjusted to column for smaller screens */
+  align-items: flex-start;
+  padding: 10px;
+  margin: 10px;
+}
+
+.subheader li {
+  padding: 10px;
+  font-size: 16px;
+  margin: 5px;
+  font-weight: bold;
+  color: lightgrey;
+}
+
+.chart {
+  width: 100%;
+}
+
+.chart h1 {
+  margin-left: 15px;
+  width: 100%;
+}
+
+@media only screen and (max-width: 592px) {
+  .container {
+    padding: 50px;
+    /* width:50%; Adjusted padding for smaller screens */
+  }
+
+  .header,
+  .subheader {
+    width: 100%;
+  }
+
+  h4, h2 {
+    margin-left: 15px;
+  }
+}
